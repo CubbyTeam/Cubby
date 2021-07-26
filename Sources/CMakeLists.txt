@@ -37,6 +37,7 @@ target_link_libraries(${target}
     bgfx
     bimg
     bx
+    glfw
 
     PUBLIC
     ${DEFAULT_LINKER_OPTIONS}
