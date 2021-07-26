@@ -34,6 +34,9 @@ target_compile_options(${target}
 
 target_link_libraries(${target}
     PRIVATE
+    bgfx
+    bimg
+    bx
 
     PUBLIC
     ${DEFAULT_LINKER_OPTIONS}
