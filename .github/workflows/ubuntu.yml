@@ -51,7 +51,7 @@ jobs:
           echo "CXX=clang++-${{ matrix.version }}" >> $GITHUB_ENV
         fi
     - name: Configure Build
-      run: mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release -DBGFX_BUILD_EXAMPLES=OFF -DBGFX_BUILD_TOOLS=ON -DBGFX_INSTALL=ON ..
+      run: mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release ..
     - name: Build
       run: cd build && make
     - name: Run Unit Test
