@@ -22,23 +22,23 @@ jobs:
             compiler: xcode
             version: "12.2"
           # macOS 10.15 + gcc-9
-          - name: "macOS 10.15 + gcc-9"
-            os: macos-10.15
-            compiler: gcc
-            version: "9"
+          #- name: "macOS 10.15 + gcc-9"
+          #  os: macos-10.15
+          #  compiler: gcc
+          #  version: "9"
           # macOS 10.15 + gcc-10
-          - name: "macOS 10.15 + gcc-10"
-            os: macos-10.15
-            compiler: gcc
-            version: "10"
+          #- name: "macOS 10.15 + gcc-10"
+          #  os: macos-10.15
+          #  compiler: gcc
+          #  version: "10"
 
     runs-on: ${{ matrix.os }}
     name: ${{ matrix.name }}
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
       with:
-        submodules: true
+        submodules: recursive
     - name: Configure Compiler
       run: |
         if [ "${{ matrix.compiler }}" = "gcc" ]; then

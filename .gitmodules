@@ -1,3 +1,9 @@
 [submodule "Libraries/doctest"]
 	path = Libraries/doctest
 	url = https://github.com/onqtam/doctest
+[submodule "Libraries/bgfx.cmake"]
+	path = Libraries/bgfx.cmake
+	url = https://github.com/bkaradzic/bgfx.cmake
+[submodule "Libraries/glfw"]
+	path = Libraries/glfw
+	url = https://github.com/glfw/glfw

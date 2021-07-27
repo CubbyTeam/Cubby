@@ -15,6 +15,10 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Includes
 include_directories(Libraries)
+include_directories(Libraries/bgfx.cmake/bgfx/include)
+include_directories(Libraries/bgfx.cmake/bimg/include)
+include_directories(Libraries/bgfx.cmake/bx/include)
+include_directories(Libraries/glfw/include)
 include_directories(Libraries/doctest/doctest)
 
 # Compile options
@@ -29,6 +33,8 @@ endif()
 set(CMAKE_MACOSX_RPATH ON)
 
 # Project modules
+add_subdirectory(Libraries/bgfx.cmake)
+add_subdirectory(Libraries/glfw)
 add_subdirectory(Libraries/doctest)
 add_subdirectory(Sources)
 add_subdirectory(Tests/UnitTests)
