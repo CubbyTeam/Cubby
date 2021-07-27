@@ -42,7 +42,7 @@ jobs:
       if: ${{ github.event_name == 'pull_request' }}
 
     # Updates submodule.
-    - run: git submodule update --init
+    - run: git submodule update --init --recursive
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL

@@ -21,9 +21,9 @@ jobs:
     name: ${{ matrix.name }}
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
       with:
-        submodules: true
+        submodules: recursive
     - name: Install packages
       run: sudo apt-get install -yq lcov libgl1-mesa-dev
     - name: Configure Compiler
