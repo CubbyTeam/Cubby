@@ -22,7 +22,7 @@ You can contact me via e-mail (utilForever at gmail.com). I am always happy to a
 
 <img align="right" src="http://opensource.org/trademarks/opensource/OSI-Approved-License-100x137.png">
 
-The class is licensed under the [GNU General Public License v3.0 License](http://opensource.org/licenses/MIT):
+The class is licensed under the [GNU General Public License v3.0 License](https://opensource.org/licenses/GPL-3.0):
 
 Copyright &copy; 2022 Cubby Team
 
